@@ -1,5 +1,6 @@
 package com.microservices.currencyexchangeservice.resource;
 
+import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,5 +18,10 @@ public class CurrencyExchangeController {
 	public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to,
 			@RequestHeader Map<String, String> headers) {
 		return exchangeValueService.exchangeValue(from, to, headers);
+	}
+
+	@GetMapping("/currency-exchange/all")
+	public List<ExchangeValue> retrieveCurrencies(@RequestHeader Map<String, String> headers) {
+		return exchangeValueService.retrieveAll(headers);
 	}
 }

@@ -1,0 +1,13 @@
+scrape_configs:
+#  - job_name: "prometheus"
+  - job_name: 'aws-currency-exchange-service-prometheus'
+    metrics_path: '/api/currency-exchange-microservice/actuator/prometheus'
+    static_configs:
+      - targets: ['aws-currency-exchange-service-prometheus:8080']
+rule_files:
+  - 'rules.yml'
+#alerting:
+#  alertmanagers:
+#    - static_configs:
+#        - targets:
+#            - alertmanager:9093

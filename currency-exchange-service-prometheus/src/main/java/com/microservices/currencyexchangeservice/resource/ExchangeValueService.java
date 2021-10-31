@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -32,6 +33,20 @@ public class ExchangeValueService {
 
         exchangeValue.setExchangeEnvironmentInfo(containerMetaDataService.retrieveContainerMetadataInfo());
         return exchangeValue;
+    }
+
+    public List<ExchangeValue> retrieveAll(Map<String, String> headers) {
+        printAllHeaders(headers);
+
+        List<ExchangeValue> results = repository.findAll();
+
+        if (results.isEmpty()) {
+            log.info("No results found");
+        }
+
+        results.forEach(result -> result.setExchangeEnvironmentInfo(containerMetaDataService.retrieveContainerMetadataInfo()));
+
+        return results;
     }
 
     private void printAllHeaders(Map<String, String> headers) {

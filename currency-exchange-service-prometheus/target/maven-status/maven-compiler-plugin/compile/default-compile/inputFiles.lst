@@ -1,0 +1,9 @@
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\CurrencyExchangeServiceApplicationPrometheus.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\resource\ExchangeValueRepository.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\util\logging\EnvironmentConfigurationLogger.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\resource\DemoMetrics.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\resource\ExchangeValueService.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\util\containerservice\ContainerMetaDataService.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\resource\CurrencyExchangeController.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\resource\DemoMetricsScheduler.java
+C:\Users\lazar\Projects\monitoring-demo-app\currency-exchange-service-prometheus\src\main\java\com\microservices\currencyexchangeservice\resource\ExchangeValue.java
